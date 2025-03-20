@@ -80,7 +80,7 @@ Los siguientes hiperparámetros controlan el comportamiento del algoritmo SARSA:
 
 - **Epsilon (`epsilon`)**:
   - Controla la probabilidad de exploración frente a explotación.
-  - Valor utilizado: `0.1`.
+  - Valor utilizado: `0.3`.
 
 - **Episodios (`episodes`)**:
   - Número total de episodios durante el entrenamiento.
