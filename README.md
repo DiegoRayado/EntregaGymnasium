@@ -31,7 +31,7 @@ Se prueba el algoritmo q-learning dado para probar que todo funcione correctamen
 ## SARSA <a name="s"></a>
 ### Video
 Video del funcionamiento del controlador
-[Enlace](https://youtu.be/X8nPELdxMe0)
+[Enlace](https://youtu.be/OQCl2YQqheI)
 
 Se implementa el algoritmo de aprendizaje por refuerzo **SARSA** (State-Action-Reward-State-Action) para entrenar al agente.
 
