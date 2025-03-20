@@ -97,25 +97,25 @@ Los siguientes hiperparámetros controlan el comportamiento del algoritmo SARSA:
    - El agente navega eficientemente hacia el objetivo utilizando la política aprendida.
   
 ## A* <a name="A"></a>
-Por ultimo, se realiza un contrlador utilizando la logica A* explicada en la entrega de Webots. Sin emabargo, este caso se utiliza el enviromente de Gymanisum.
+Por ultimo, se realiza un contrlador utilizando la logica A* explicada en la entrega de Webots. Sin emabargo, en este caso se utiliza el enviromente de Gymanisum.
 ### Video 
 Video del funcionamiento del controlador
 [Enlace](https://youtu.be/_WSvWpLqmOY)
 
-## Lanzar <a name="i4"></a>
+## Ejecutar scrips <a name="i4"></a>
 
-## Installation
+### Installation
 
 ```bash
 pip install -e .
 ```
 
-## Run
+### Run
 
 ```bash
 cd examples
-python q-learning.py  #
-python SARSA.py  # 
-python Astar.py  # 
+python q-learning.py 
+python SARSA.py  
+python Astar.py  
 ```
 
