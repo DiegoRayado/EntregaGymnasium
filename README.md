@@ -92,7 +92,7 @@ Los siguientes hiperparámetros controlan el comportamiento del algoritmo SARSA:
 1. **Durante el entrenamiento**:
    - El agente explora el mapa tomando acciones aleatorias (exploración epsilon-greedy) y actualiza su política basada en las recompensas obtenidas.
    - Las recompensas totales por episodio deberían mejorar gradualmente conforme el agente aprende a evitar paredes y alcanzar el objetivo.
-
+    **NOTA**: Durante el entrenamiento no se ve al agente realizar estas acciones. Visualización desactivada.
 2. **Durante la evaluación**:
    - El agente navega eficientemente hacia el objetivo utilizando la política aprendida.
   
