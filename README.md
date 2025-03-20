@@ -64,7 +64,7 @@ Donde:
 3. **Evaluación**:
    - Una vez entrenado, el agente utiliza la política aprendida para navegar hacia el objetivo tomando las mejores acciones según los valores Q.
 
-###Hiperparámetros Utilizados
+### Hiperparámetros Utilizados
 
 Los siguientes hiperparámetros controlan el comportamiento del algoritmo SARSA:
 
@@ -92,9 +92,6 @@ Los siguientes hiperparámetros controlan el comportamiento del algoritmo SARSA:
 
 2. **Durante la evaluación**:
    - El agente navega eficientemente hacia el objetivo utilizando la política aprendida.
-
-
-
 
 
 ## Lanzar el programa <a name="i4"></a>
