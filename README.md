@@ -24,6 +24,7 @@ Se posicion el robot pionner en el inicio (2,2). Por lo que se determina que el 
 ### Video 
 Video del funcionamiento del controlador
 [Enlace](https://youtu.be/v7O99MD4ZUk)
+
 Para asegurar que todo funcione correctamente, probamos el algoritmo después de realizar las modificaciones necesarias para que pudiera resolver el mapa correspondiente (map2.csv). Como parte de estos ajustes, aumentamos las iteraciones a 300.
 
 ## SARSA <a name="s"></a>
