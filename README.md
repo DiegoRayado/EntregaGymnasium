@@ -42,13 +42,13 @@ Q(s,a) \leftarrow Q(s,a) + \alpha [r + \gamma Q(s',a') - Q(s,a)]
 $$
 
 Donde:
-- $$ s $$: Estado actual.
-- $$ a $$: Acción tomada en $$ s $$.
-- $$ r $$: Recompensa obtenida al tomar $$ a $$.
-- $$ s' $$: Nuevo estado después de tomar $$ a $$.
-- $$ a' $$: Próxima acción seleccionada en $$ s' $$.
-- $$ \alpha $$: Tasa de aprendizaje (controla la velocidad de actualización).
-- $$ \gamma $$: Factor de descuento (pondera recompensas futuras).
+- **s**: Estado actual.
+- **a**: Acción tomada en **s**.
+- **r**: Recompensa obtenida al tomar **a**.
+- **s'**: Nuevo estado después de tomar **a**.
+- **a'**: Próxima acción seleccionada en **s'**.
+- **α (alpha)**: Tasa de aprendizaje (controla la velocidad de actualización).
+- **γ (gamma)**: Factor de descuento (pondera recompensas futuras).
 
 ---
 
@@ -56,15 +56,14 @@ Donde:
 
 1. **Exploración y explotación**:
    - SARSA utiliza una política *epsilon-greedy* para equilibrar exploración y explotación:
-     - Con probabilidad $$ \epsilon $$, el agente toma una acción aleatoria (exploración).
-     - Con probabilidad $$ 1-\epsilon $$, el agente toma la acción con el mayor valor Q (explotación).
+     - Con probabilidad **ε**, el agente toma una acción aleatoria (exploración).
+     - Con probabilidad **1-ε**, el agente toma la acción con el mayor valor Q (explotación).
 
 2. **Entrenamiento**:
    - Durante múltiples episodios, el agente aprende a evitar paredes y alcanzar el objetivo optimizando los valores de la tabla Q.
 
 3. **Evaluación**:
    - Una vez entrenado, el agente utiliza la política aprendida para navegar hacia el objetivo tomando las mejores acciones según los valores Q.
-
 ---
 
 ## Hiperparámetros Utilizados
