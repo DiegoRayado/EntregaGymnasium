@@ -3,7 +3,8 @@
 1. [Introducción](#Introduccion)
 2. [Q-learning](#q)
 3. [SARSA](#S)
-4. [Lanzar el programa](#i4)
+4. [A*](#A)
+5. [Lanzar el programa](#i4)
 ## Introducción <a name="Introduccion"></a>
 Tal y como se meciona en el guión se genera un laberinto de tamaño 10x12 (Según mi nombre) utilizando la LibreOffice. El mapa es el siguiente:
 
@@ -94,27 +95,12 @@ Los siguientes hiperparámetros controlan el comportamiento del algoritmo SARSA:
 
 2. **Durante la evaluación**:
    - El agente navega eficientemente hacia el objetivo utilizando la política aprendida.
+  
+## A* <a name="A"></a>
+Por ultimo, se realiza un contrlador utilizando la logica A* explicada en la entrega de Webots. Sin emabargo, este caso se utiliza el enviromente de Gymanisum.
+### Video 
+Video del funcionamiento del controlador
+[Enlace](https://youtu.be/_WSvWpLqmOY)
 
+## Lanzar <a name="i4"></a>
 
-## Lanzar el programa <a name="i4"></a>
-Antes de todo en `EntregaGazebo/Controlador/build` ejecutar:
-<pre><code>cmake ..
-make</code></pre>
-
-Para lanzar el mundo de Gazebo con el modelo Pioneer, simplemente ejecuta el siguiente script:
-
-<pre><code>./launch.sh</code></pre>
-
-Este script realizará dos tareas principales:
-
-1. Configurará automáticamente el `GAZEBO_MODEL_PATH` mediante el script de Python `set_gazebo_path.py`, que apunta a la carpeta del modelo (pioneer).
-2. Lanzará Gazebo con el archivo `map.world.xml` (mundo de Gazebo) que se encuentra en la carpeta `mundos`.
-
-Si se quisiera usar otro modelo Pioneer, es necesario modificar el archivo correspondiente para cambiar la variable GAZEBO_MODEL_PATH. Esto puede hacerse editando el script set_gazebo_path.py o exportando manualmente la nueva ruta en la terminal antes de ejecutar el script. Por ejemplo:
-<pre><code>export GAZEBO_MODEL_PATH=/ruta/a/tu/modelo:$GAZEBO_MODEL_PATH</code></pre>
-
-Esto permitirá que Gazebo cargue el modelo deseado desde la nueva ubicación especificada. Asegúrate de que los archivos del modelo estén correctamente configurados y que el archivo del mundo (map.world.xml) haga referencia al nuevo modelo. Finalmente:
-Sino se ha modificado `set_gazebo_path.py`
-<pre><code>gazebo map.world.xml</code></pre>
-o si, si se ha modificado
-<pre><code>./launch.sh</code></pre>
