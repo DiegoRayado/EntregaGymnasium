@@ -4,7 +4,7 @@
 2. [Q-learning](#q)
 3. [SARSA](#S)
 4. [A*](#A)
-5. [Lanzar el programa](#i4)
+5. [Ejecutar Scripts](#i4)
 ## Introducción <a name="Introduccion"></a>
 Tal y como se meciona en el guión se genera un laberinto de tamaño 10x12 (Según mi nombre) utilizando la LibreOffice. El mapa es el siguiente:
 
