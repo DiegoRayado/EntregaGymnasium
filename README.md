@@ -26,7 +26,7 @@ Se posicion el robot pionner en el inicio (2,2). Por lo que se determina que el 
 Video del funcionamiento del controlador
 [Enlace](https://youtu.be/v7O99MD4ZUk)
 
-Para asegurar que todo funcione correctamente, probamos el algoritmo después de realizar las modificaciones necesarias para que pudiera resolver el mapa correspondiente (map2.csv). Como parte de estos ajustes, aumentamos las iteraciones a 300.
+Se prueba el algoritmo q-learning dado para probar que todo funcione correctamente, no sin antes realizar las modificaciones necesarias para que pueda resolver el mapa correspondiente (map2.csv). Como parte de estos ajustes, aumentamos las iteraciones a 300.
 
 ## SARSA <a name="s"></a>
 ### Video
@@ -97,7 +97,7 @@ Los siguientes hiperparámetros controlan el comportamiento del algoritmo SARSA:
    - El agente navega eficientemente hacia el objetivo utilizando la política aprendida.
   
 ## A* <a name="A"></a>
-Por ultimo, se realiza un contrlador utilizando la logica A* explicada en la entrega de Webots. Sin emabargo, en este caso se utiliza el enviromente de Gymanisum.
+Por ultimo, se realiza un contrlador utilizando la logica A* (explicada en la entrega de Webots). Sin emabargo, en este caso se utiliza el enviromente de Gymanisum.
 ### Video 
 Video del funcionamiento del controlador
 [Enlace](https://youtu.be/_WSvWpLqmOY)
