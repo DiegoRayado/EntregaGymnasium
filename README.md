@@ -32,11 +32,11 @@ Video del funcionamiento del controlador
 
 Se implementa el algoritmo de aprendizaje por refuerzo **SARSA** (State-Action-Reward-State-Action) para entrenar al agente.
 
-## Algoritmo SARSA
+### Algoritmo SARSA
 
 SARSA es un método de aprendizaje por refuerzo que actualiza los valores estado-acción basándose en la acción que realmente se tomará en el siguiente estado. Esto lo hace más adecuado para entornos donde las decisiones dependen del comportamiento real del agente.
 
-### Fórmula de actualización:
+#### Fórmula de actualización:
 $$
 Q(s,a) \leftarrow Q(s,a) + \alpha [r + \gamma Q(s',a') - Q(s,a)]
 $$
@@ -50,9 +50,8 @@ Donde:
 - **α (alpha)**: Tasa de aprendizaje (controla la velocidad de actualización).
 - **γ (gamma)**: Factor de descuento (pondera recompensas futuras).
 
----
 
-## Funcionamiento del Algoritmo
+### Funcionamiento del Algoritmo
 
 1. **Exploración y explotación**:
    - SARSA utiliza una política *epsilon-greedy* para equilibrar exploración y explotación:
@@ -64,9 +63,8 @@ Donde:
 
 3. **Evaluación**:
    - Una vez entrenado, el agente utiliza la política aprendida para navegar hacia el objetivo tomando las mejores acciones según los valores Q.
----
 
-## Hiperparámetros Utilizados
+###Hiperparámetros Utilizados
 
 Los siguientes hiperparámetros controlan el comportamiento del algoritmo SARSA:
 
@@ -86,9 +84,7 @@ Los siguientes hiperparámetros controlan el comportamiento del algoritmo SARSA:
   - Número total de episodios durante el entrenamiento.
   - Valor utilizado: `500`.
 
----
-
-## Resultados Esperados
+### Resultados Esperados
 
 1. **Durante el entrenamiento**:
    - El agente explora el mapa tomando acciones aleatorias (exploración epsilon-greedy) y actualiza su política basada en las recompensas obtenidas.
@@ -97,12 +93,7 @@ Los siguientes hiperparámetros controlan el comportamiento del algoritmo SARSA:
 2. **Durante la evaluación**:
    - El agente navega eficientemente hacia el objetivo utilizando la política aprendida.
 
----
 
-## Ejecución
-
-### Entrenamiento
-Ejecuta el script principal para entrenar al agente utilizando SARSA:
 
 
 
