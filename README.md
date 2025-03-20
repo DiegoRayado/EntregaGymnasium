@@ -102,7 +102,7 @@ Por ultimo, se realiza un contrlador utilizando la logica A* explicada en la ent
 Video del funcionamiento del controlador
 [Enlace](https://youtu.be/_WSvWpLqmOY)
 
-## Ejecutar scrips <a name="i4"></a>
+## Ejecutar Scripts <a name="i4"></a>
 
 ### Installation
 
