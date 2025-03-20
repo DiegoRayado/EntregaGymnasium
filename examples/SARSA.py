@@ -4,8 +4,9 @@ import termios
 import tty
 import sys
 import gymnasium as gym
-import numpy as np
+import gymnasium_csv
 from gymnasium_csv.wrappers import BoxToDiscreteObservation
+import numpy as np
 
 # Crear el entorno personalizado con las coordenadas y mapa especificados
 env_raw = gym.make(
@@ -23,9 +24,9 @@ env = BoxToDiscreteObservation(env_raw)
 Q = np.zeros([env.observation_space.n, env.action_space.n])
 
 # Hiperparámetros para SARSA
-alpha = 0.5  # Tasa de aprendizaje ajustada
-gamma = 0.99  # Factor de descuento ajustado
-epsilon = 0.4  # Probabilidad de exploración (epsilon-greedy)
+alpha = 0.5  # Tasa de aprendizaje
+gamma = 0.95  # Factor de descuento para recompensas futuras
+epsilon = 0.1  # Probabilidad de exploración (epsilon-greedy)
 episodes = 500  # Número de episodios de entrenamiento
 
 print("Entrenando con SARSA...")
@@ -47,12 +48,6 @@ for episode in range(episodes):
         # Ejecutar la acción seleccionada y obtener el siguiente estado y recompensa
         next_state, reward, terminated, truncated, _ = env.step(action)
         done = terminated or truncated
-
-        # Llamar a render() para mostrar los movimientos del agente durante el entrenamiento
-        env.render()
-
-        # Diagnóstico: Imprimir estado, acción y recompensa
-        print(f"Episodio: {episode}, Estado: {state}, Acción: {action}, Recompensa: {reward}")
 
         # Seleccionar la próxima acción usando una política epsilon-greedy
         if np.random.uniform(0, 1) < epsilon:
