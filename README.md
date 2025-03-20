@@ -104,3 +104,18 @@ Video del funcionamiento del controlador
 
 ## Lanzar <a name="i4"></a>
 
+## Installation
+
+```bash
+pip install -e .
+```
+
+## Run
+
+```bash
+cd examples
+python q-learning.py  #
+python SARSA.py  # 
+python Astar.py  # 
+```
+
